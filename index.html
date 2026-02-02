@@ -305,22 +305,74 @@
         );
       }
 
-      @media (max-width: 768px) {
-        #services .card {
-          font-size: 18px;
-          padding: 22px;
-        }
-      }
+      /* ===========================
+   MOBILE FIXES
+   =========================== */
 
       @media (max-width: 768px) {
+        h2 {
+          font-size: 28px;
+          margin-bottom: 35px;
+        }
+
+        /* SERVICES STACK FIX */
+        #services .services {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        #services .card {
+          min-height: auto;
+          font-size: 17px;
+          padding: 20px;
+        }
+
+        .servicesImages {
+          height: 220px;
+        }
+
+        .servicesImages img {
+          height: 100%;
+        }
+
+        /* HERO FIX */
+        .hero {
+          height: auto;
+          padding: 100px 20px;
+        }
+
         .hero h1 {
-          font-size: 40px;
+          font-size: 34px;
+          line-height: 1.2;
         }
-        .hero .logo img {
-          height: 160px;
+
+        .hero p {
+          font-size: 16px;
         }
+
+        /* BUTTONS STACK */
+        .btn {
+          display: block;
+          margin: 10px auto;
+          width: 90%;
+          max-width: 300px;
+        }
+
+        /* FLOATING BUTTONS – avoid overlap */
+        .floating-buttons {
+          right: 15px;
+          bottom: 15px;
+        }
+
+        .floating-buttons a {
+          padding: 12px 18px;
+          font-size: 14px;
+        }
+
+        /* CONTACT FIX */
         .contact {
           grid-template-columns: 1fr;
+          gap: 25px;
         }
       }
     </style>
@@ -389,20 +441,20 @@
       <div class="services">
         <div class="card">Vopsitorie & Tinichigerie</div>
         <div class="servicesImages">
-          <img src="/images/vlad_pop_paint.png" alt="Logo v8carshop" />
+          <img src="images/vlad_pop_paint.png" alt="Logo v8carshop" />
         </div>
         <div class="card">Restaurare Completă</div>
         <div class="servicesImages">
-          <img src="/images/car_before_after.png" alt="Logo v8carshop" />
+          <img src="images/car_before_after.png" alt="Logo v8carshop" />
         </div>
         <div class="card">Detailing & Finisare</div>
         <div class="servicesImages">
-          <img src="/images/wheel_before_after.png" alt="Logo v8carshop" />
+          <img src="images/wheel_before_after.png" alt="Logo v8carshop" />
         </div>
         <div class="card">Proiecte Personalizate</div>
         <div class="servicesImages">
           <img
-            src="/images/car_paint_restoration_wheel.png"
+            src="images/car_paint_restoration_wheel.png"
             alt="Logo v8carshop"
           />
         </div>
